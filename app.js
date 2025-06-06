@@ -26,3 +26,29 @@ for (let i = 1; i <= 10; i++) {
     console.log(i + " is even");
   }
 }
+
+
+// 1. Create an object for user
+const user = {
+  name: "Prasanna",
+  age: 25,
+  skills: ["JavaScript", "Drupal", "React"]
+};
+
+console.log("Name:", user.name);
+console.log("Skills:", user.skills.join(", "));
+
+// 2. Loop through object
+for (let key in user) {
+  console.log(key + " => " + user[key]);
+}
+
+// 3. String operations
+let message = "Welcome to JavaScript learning";
+console.log("Length:", message.length);
+console.log("Uppercase:", message.toUpperCase());
+console.log("Words:", message.split(" "));
+
+// 4. Destructuring
+const { name, age } = user;
+console.log(`My name is ${name} and I am ${age} years old.`);
